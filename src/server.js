@@ -17,7 +17,8 @@ app.get('*', (req, res) => {
   const result = html.replace(
     '<div id="root"></div>',
     `<div id="root">${renderString}</div>`,
+    // 맨 처음의 요청에 응답, div#root를 대체
   );
-  res.send(result);
+  res.send(result)
 });
 app.listen(3000);
