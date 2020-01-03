@@ -8,10 +8,6 @@ const Container = styled.div`
   background-color: #aaaaaa;
   border: 1px solid blue;
 `;
-const ImgContainer = styled.img`
-  width:500px;
-  height:auto;
-`
 
 class App extends React.Component {
   state = {
