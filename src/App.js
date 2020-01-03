@@ -2,11 +2,16 @@ import React from 'react';
 import Home from './views/home'
 import About from './views/about'
 import styled from 'styled-components'
+import Seulgi from '../public/seulgi.jpg'
 
 const Container = styled.div`
   background-color: #aaaaaa;
   border: 1px solid blue;
 `;
+const ImgConstiner = styled.img`
+  width:500px;
+  height:auto;
+`
 
 class App extends React.Component {
   state = {
@@ -35,9 +40,12 @@ class App extends React.Component {
             About
         </button>
           <PageComponent />
+          <div>
+            슬기 사진이나 보시죠
+            <img src={Seulgi} />
+          </div>
         </div>
       </Container>
-
     )
   }
 }
