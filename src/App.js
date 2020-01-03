@@ -8,7 +8,7 @@ const Container = styled.div`
   background-color: #aaaaaa;
   border: 1px solid blue;
 `;
-const ImgConstiner = styled.img`
+const ImgContainer = styled.img`
   width:500px;
   height:auto;
 `
@@ -41,11 +41,13 @@ class App extends React.Component {
         </button>
           <PageComponent />
           <div>
-            슬기 사진이나 보시죠
-            <img src={Seulgi} />
+            <div>
+              슬기 사진이나 보시죠
+            </div>
+            <img src={Seulgi} alt="슬기" style={{ width: 500 + 'px' }} />
           </div>
         </div>
-      </Container>
+      </Container >
     )
   }
 }
